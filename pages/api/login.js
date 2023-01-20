@@ -1,4 +1,4 @@
-import { BACKEND_URL } from "config";
+import { BACKEND_URL } from "./../../config/index";
 import axios from "axios";
 import cookie from "cookie";
 
@@ -8,13 +8,12 @@ export default async function login(req, res) {
 
         try {
             const backendRes = await axios.post(
-                `${BACKEND_URL}api/users/login`,
+                `${BACKEND_URL}/api/v1/users/login`,
                 {
                     identifier,
                     password,
                 }
             );
-
             const { user, token } = backendRes.data.data;
             //SETTING SERVER SIDE COOKIES
             res.setHeader(
@@ -32,7 +31,7 @@ export default async function login(req, res) {
                 user,
             });
         } catch (err) {
-            return res.status(err.response.status || 500).json({
+            return res.status(500).json({
                 error: err.response.data,
                 message: err.response.data.message,
             });
