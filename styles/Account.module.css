@@ -1,0 +1,24 @@
+.AccountContainer {
+    max-width: 50rem;
+    min-width: 50rem;
+    margin: 0 auto;
+    margin-bottom: 16rem;
+}
+
+.AccountSubContainer {
+    margin-top: 12rem;
+    background-color: black;
+    color: white;
+    padding: 4rem;
+    padding-bottom: 0;
+}
+
+.profileImage {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    outline: 0.4rem solid white;
+}

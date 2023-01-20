@@ -1,0 +1,10 @@
+.formContainer {
+    max-width: 50rem;
+}
+
+.formContainerCenter {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

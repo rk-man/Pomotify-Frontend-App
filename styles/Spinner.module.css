@@ -1,0 +1,30 @@
+.Spinner {
+    width: 12rem;
+    height: 12rem;
+    animation: spin infinite 5s linear;
+    color: rgb(255, 255, 255);
+}
+
+.spinnerOverlay {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.541);
+    z-index: 1000;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

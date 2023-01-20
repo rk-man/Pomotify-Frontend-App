@@ -1,0 +1,19 @@
+.PomoInfoContainer {
+    width: 70rem;
+    background-color: black;
+    min-height: 20rem;
+    padding: 4rem;
+    color: white;
+}
+
+.HowToPomos {
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 85%;
+    margin: auto;
+    gap: 3rem;
+    margin-bottom: 4rem;
+}

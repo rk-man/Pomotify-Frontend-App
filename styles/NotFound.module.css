@@ -1,0 +1,13 @@
+.error-container {
+    width: 40rem;
+}
+
+.error {
+    max-width: 50rem;
+    min-width: 30rem;
+    min-height: 20rem;
+    background-color: black;
+    margin: 0 auto;
+    color: white;
+    padding: 4rem;
+}
